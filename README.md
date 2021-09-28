@@ -1,6 +1,6 @@
 # Clinic Database Diagram
 
-> This is a Database excersice for Microverse.
+> This is a Database excercise for Microverse.
 
 👤 **Authors**
 
