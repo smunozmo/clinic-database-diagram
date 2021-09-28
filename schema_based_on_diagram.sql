@@ -48,8 +48,8 @@ ALTER TABLE
 CREATE INDEX "invoices_medical_history_id_index" ON
     "invoices"("medical_history_id" ASC);
 CREATE TABLE "medical_history_treatments"(
-    "medical_history_id" INTEGER NOT NULL,
-    "treatments_id" INTEGER NOT NULL
+    "medical_history_id" INTEGER REFERENCES "medical_histories"("id"),
+    "treatments_id" INTEGER REFERENCES "treatments"("id")
 );
 CREATE INDEX "medical_history_treatments_medical_history_id_index" ON
     "medical_history_treatments"("medical_history_id" ASC);
