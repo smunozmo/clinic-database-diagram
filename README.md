@@ -2,6 +2,11 @@
 
 > This is a Database excercise for Microverse.
 
+
+![screenshot](./drawSQL-export-2021-09-28_14_10.png)
+
+
+
 👤 **Authors**
 
 Arturo Guzmán
