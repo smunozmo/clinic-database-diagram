@@ -55,3 +55,9 @@ CREATE INDEX "medical_history_treatments_medical_history_id_index" ON
     "medical_history_treatments"("medical_history_id" ASC);
 CREATE INDEX "medical_history_treatments_treatments_id_index" ON
     "medical_history_treatments"("treatments_id" ASC);
+
+ALTER TABLE
+    "medical_histories" ADD CONSTRAINT "medical_histories_patient_id_foreign" FOREIGN KEY("patient_id") REFERENCES "patients"("id");
+ALTER TABLE
+    "medical_history_treatments" ADD CONSTRAINT "medical_history_treatments_medical_history_id_foreign" FOREIGN KEY("medical_history_id") REFERENCES "medical_histories"("id");
+
